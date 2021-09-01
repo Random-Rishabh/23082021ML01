@@ -63,8 +63,6 @@ False
 			print(i)
 	else:
 		break
-
-	
 386
 462
 418
