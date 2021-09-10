@@ -82,6 +82,64 @@ False
 >>> olor_list_1.difference(olor_list_2)
 {'White', 'Black'}
 
-###############################......6......################################
+###############################......8......################################
 
->>> alphab='abcdefghijklmnopqrstuvwxyz'
+alphab='abcdefghijklmnopqrstuvwxyz'
+z=input('enter the string')
+i=True
+for q in alPha:
+	if q not in z:
+		i=False
+if i==False:
+	print("it is not a pangram")
+else:
+	print("it is a pangram")
+
+###############################......9......################################
+
+n=int(input("enter a number"))
+print((3*n)+(20*n)+(100*n))
+
+###############################......10......################################
+
+>>> inp=input("enter the string")
+enter the string23 54 12#98 3 17
+>>> f,n=inp.split(sep ="#",maxsplit=2)
+>>> qw=list(f.split(sep=" "))
+>>> qw
+['23', '54', '12']
+>>> qw=[int(i) for i in qw]
+>>> qe=list(n.split(sep=" "))
+>>> qe=[int(i) for i in qe]
+>>> print(qw,qe)
+
+###############################......11......################################
+ll=[];u=True
+u=True
+while u==True:
+	x=input("enter string");ll.append(x)
+	u=bool(input("want to rnter more(write something to enter more or nothing to stop, and press enter)"))
+print(ll.sort())
+
+###############################......12......################################
+
+d = {'Student': ['Rahul','Kishore', 'Vidhya', 'Raakhi'], 
+'Marks': [57,87,67,79]}
+max=0;
+ for i in d['Marks']:
+	if i>max:max=i
+print(d['Student'][d['Marks'].index(max)])
+
+###############################......13......################################
+
+z=input('enter a string')
+a,m=0,0
+ for i in z:
+	if i.isalpha()==True:
+		a+=1
+	if i.isdigit()==True:
+		m+=1
+print("LETTERS ",a,"\nDIGITS ",m)
+
+###############################......14......################################
+
