@@ -129,3 +129,37 @@ print("LETTERS ",a,"\nDIGITS ",m)
 
 ###############################......14......################################
 
+
+###############################......14......################################
+>>> d={'Name': ['Akash', 'Soniya', 'Vishakha' , 'Akshay', 'Rahul', 'Vikas'],
+'Subject': ['Python', 'Java', 'Python', 'C', 'Python', 'Java'],
+'Ratings': [8.4, 7.8, 8, 9, 8.2, 5.6]}
+>>> m=input('Enter the Subject')
+>>> p=list(d.keys())
+>>> g=list(d.values())
+>>> ho=[]
+>>> hi={p[i]:ho.append(g[i][j]) for i in range(len(p)) for j in range(len(g[1])) if(g[1][j]==m)}
+>>> hi={p[i]:ho[i*3:(i+1)*3] for i in range(len(p))}
+>>> hi
+{'Name': ['Akash', 'Vishakha', 'Rahul'], 'Subject': ['Python', 'Python', 'Python'], 'Ratings': [8.4, 8, 8.2]}
+
+###############################......15......################################
+
+class di:
+    def fun(x):
+        j=[]
+        for i in range(x):
+            if i%7==0:
+                yield i
+o=di.fun(14)
+
+###############################......16......################################
+
+from math import isqrt
+u=int(input("UP "))
+d=int(input("DOWN "))
+l=int(input("LEFT "))
+r=int(input("RIGHT "))
+u-=d;abs(u)
+l-=r;abs(l)
+print(round(isqrt(abs(u*u)+(l*l))))
